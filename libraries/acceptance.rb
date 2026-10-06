@@ -25,6 +25,7 @@ class Acceptance < Inspec.resource(1)
   "
 
   def initialize
+    super
     conf = read_config
     client = init_aem_aws_client(conf)
     @client_sm = client.stack_manager(conf[:aem_stack_prefix])

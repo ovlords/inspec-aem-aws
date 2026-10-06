@@ -25,6 +25,7 @@ class Recovery < Inspec.resource(1)
   "
 
   def initialize
+    super
     conf = read_config
     client = init_aem_aws_client(conf)
     @client_aem_aws = init_aws_aem_instance_client(client, conf)
