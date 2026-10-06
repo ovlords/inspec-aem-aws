@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Fix release workflows to use SHINEOPENSOURCE_GITHUB_TOKEN instead of SHINEWORKS_GITHUB_TOKEN, matching this repo's original token
+- Fix Ruby code to align with RuboCop recommendations
 
 ## [3.0.1] - 2025-02-10
 ### Changed

@@ -141,7 +141,7 @@ class Acceptance < Inspec.resource(1)
     end
     instances_with_metric = instances_with_metric.count
 
-    return true unless instances_with_metric < instances_found
+    true unless instances_with_metric < instances_found
   end
 
   def has_contenthealthcheck_cloudwatch_alarm_state_ok?
@@ -165,7 +165,7 @@ class Acceptance < Inspec.resource(1)
     end
     instances_with_metric = instances_with_metric.count
 
-    return true unless instances_with_metric < instances_found
+    true unless instances_with_metric < instances_found
   end
 
   def has_wait_until_contenthealthcheck_cloudwatch_alarm_state_ok?
@@ -189,7 +189,7 @@ class Acceptance < Inspec.resource(1)
     end
     instances_with_metric = instances_with_metric.count
 
-    return true unless instances_with_metric < instances_found
+    true unless instances_with_metric < instances_found
   end
 
   def has_publish_cloudwatch_log_event?(logfile_name, log_message)
